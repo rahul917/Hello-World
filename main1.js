@@ -15,11 +15,11 @@ $("input:eq(1)").click(function() {
 	
 	for (var i in items) {
 		var item = items[i];
-		var span = $("<span style='background-color:" + item.color + ";width:" + size + "px;height:" + size + "px;'}>" + item.color + "</span>");
+		var span = $("<span style='display:inline-block;color:black;text-align:center;background-color:" + item.color + ";width:" + size + "px;height:" + size + "px;'}>" + item.color + "</span>");
 		//var span = $("<span>" +item.color + "</span>");
 		var size = item.size*5;
 		//span.css = ({"background-color":item.color; "font-size":item.size+"px"; width:size; height:size});
-		$("div").append(span);
+		$(".cl").append(span);
 	}
 });
 });

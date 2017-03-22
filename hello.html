@@ -9,15 +9,26 @@
 			margin:0px;
 			padding0px;
 		}
-		span {
+		
+		.ql {
 			display:inline-block;
-			color:black;
-			text-align:center;
+			height:15px;
+			width:10px;
+			background-color:lightgrey;
+			margin:1px;
+			border-radius:50%;
+		}
+		input {
+			width:20px;
+		}
+		.label {
+			display:inline-block;
+			width:60px;
 		}
 	</style>
 </head>
 <body>
-	<!--<p>
+	<p>
 		<span onclick="SetEven()">Even</span>
 		<span onclick="SetOdd()">Odd</span>
 		<span onclick="SetFirst()">First 4</span>
@@ -33,7 +44,7 @@
 			<li>Nemesis</li>
 			<li>Zeus</li>
 			<li>Hades</li>
-		</ul> -->
+		</ul>
 	<input type="button" value=".each()">
 	<input type="button" value=".map()" >
 	<p>red 10</p>
@@ -43,6 +54,23 @@
 	<p>blue 30</p>
 	<p>indigo 35</p>
 	<p>violet 40</p>
-	<div></div>
+	<div class="cl"></div>
+	
+	<p>How satisfied are you?</p>
+	<div class="dl">
+		<label>Quality</label>
+		<input type="text" onkeyup="keyUpd()">
+		<span class="ql"></span><span class="ql"></span><span class="ql"></span><span class="ql"></span><span class="ql"></span>
+	</div>
+	<div class="dl">
+		<label>Taste</label>
+		<input type="text" onkeyup="keyUpd()">
+		<span class="ql"></span><span class="ql"></span><span class="ql"></span><span class="ql"></span><span class="ql"></span>
+	</div>
+	<div class="dl">
+		<label>Server</label>
+		<input type="text" onkeyup="keyUpd()">
+		<span class="ql"></span><span class="ql"></span><span class="ql"></span><span class="ql"></span><span class="ql"></span>
+	</div>
 </body>
 </html>

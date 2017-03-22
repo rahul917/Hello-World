@@ -17,7 +17,7 @@
 		if(typeof(num) == "undefined")
 			num = 6;
 		$("li, span").css("font-weight","");
-		$("li:lt(4)").css("font-weight","bold");
+		$("li:lt(" + num + ")").css("font-weight","bold");
 		$(".label").css("font-weight", "bold");
 		$(".label").html("First 4 Planets");
 	}
@@ -30,3 +30,15 @@
 		$(".label").html("Last 2 Planets");
 	}
 
+	function keyUpd() {
+		$(".ql").css("background-color", "lightgrey");
+		
+		$(".dl").each(function() {
+			var $input = $(this).children("input:first");
+			var $value = $input.val();
+			
+			var filter = "span:lt(" + $value + ")";
+			$input.siblings(filter).css("background-color","blue");
+			
+		});
+	}
